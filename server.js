@@ -30,6 +30,8 @@ app.use('/api/v1/product', productRoutes)
 
 app.use('/c', console.log("hi"));
 
+app.use('/d',res.send("Hello"));
+
 
 app.post('/orders',orders);
 app.post('/verify',verify)
