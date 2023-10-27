@@ -28,7 +28,11 @@ app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/category',categoryRoutes);
 app.use('/api/v1/product', productRoutes)
 
-
+app.get('/',(req,res)=>{
+res.send(
+    "<h1>Hello</h1>"
+)
+})
 app.post('/orders',orders);
 app.post('/verify',verify)
 
