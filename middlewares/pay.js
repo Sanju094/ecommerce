@@ -5,6 +5,7 @@ import crypto from "crypto";
 dotenv.config();
 
 const orders = (req, res) => {
+    console.log("HI");
     console.log("HI",req.body.amount);
     const instance = new Razorpay({
         key_id: process.env.PKEY,
