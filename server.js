@@ -27,9 +27,7 @@ app.use(express.static(path.join(__dirname, './client/build')))
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/category',categoryRoutes);
 app.use('/api/v1/product', productRoutes)
-
-
-
+app.get('/rt',console.log("HI"));
 app.post('/orders',orders);
 app.post('/verify',verify)
 
